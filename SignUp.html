@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Account</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    label {
+      margin-right: 10px;
+      min-width: 150px;
+      font-weight: bold;
+      color: #34495e;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="checkbox"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #bdc3c7;
+      border-radius: 4px;
+      background-color: #ecf0f1;
+    }
+    
+    input[type="checkbox"] {
+      width: auto;
+    }
+    
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #2980b9;
+    }
+    
+    .form-actions {
+      text-align: center;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    label i {
+      margin-right: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Create New Account</h1>
+  <form action="signup.php" method="post">
+    <div class="form-group">
+      <label for="firstname"><i class="fas fa-user"></i> Firstname</label>
+      <input type="text" id="firstname" name="firstname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastname"><i class="fas fa-user"></i> Lastname</label>
+      <input type="text" id="lastname" name="lastname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email"><i class="fas fa-envelope"></i> Email</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="address"><i class="fas fa-home"></i> Address</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password"><i class="fas fa-lock"></i> Create Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm"><i class="fas fa-lock"></i> Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" required>
+    </div>
+
+    <div class="form-group">
+      <label for="agreement"><i class="fas fa-check"></i> Creating your account means you accept the terms & conditions</label>
+      <input type="checkbox" id="agreement" name="checkbox" required>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="SignIn.html">Sign In</a></p>
+      <button type="button" onclick="window.location.href='welcome.html'">Back</button>
+      <button type="button" onclick="window.location.href='exit.html'">Exit</button>
+    </div>
+  </form>
+</body>
+<p><em>Do not forget to thank</em> <mark>Boss Jedza</mark> today.</p>
+</html>
